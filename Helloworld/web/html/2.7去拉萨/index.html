@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html> <!--网页结构开始的地方 -->
+<head>
+    <title>去拉萨手风琴标签</title>
+    <meta charset='utf-8'>
+    <style>/*存放页面所有样式*/
+    *{ /*通配符选择器 选择到所有标签*/
+        margin: 0;
+    }
+    html{/*选中整个网页*/
+        height: 100%; /*继承父级高度_windows高度*/
+    }
+    body{
+        position: relative; /*相对定位父级*/
+        height: 100%;/*继承父级html高度*/        
+    }
+    ul{/**/
+        margin: 0;
+        padding: 0;
+
+    }
+        .ink-layer{/*类选择器  .+类名{ }*/
+            width: 100%;/*宽度  属性名称:属性值(单位) */
+            height: 100%;/*高度 继承父级元素高度*/
+            /**复合写法*/
+            background: #368 url(images/1.jpg) no-repeat center/cover;           
+        }
+        .ink-layer:nth-of-type(1){
+           background-image: url(images/1.jpg);
+        }
+        .ink-layer:nth-of-type(2){
+            background-image: url(images/2.jpg);
+        }
+        .ink-layer:nth-of-type(3){
+            background-image: url(images/3.jpg);
+        }
+        .ink-layer:nth-of-type(4){
+            background-image: url(images/4.jpg);
+        }
+        .content{
+            position: absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            right: 0;
+            margin:auto;
+            width: 1090px;
+            height: 400px;
+            background-color:aliceblue;
+            /*css3 盒子阴影 X位移 y位移 羽化半径 颜色*/
+            box-shadow:0 0 100px #000000
+            
+        }
+        .content ul li{
+            margin: 0px;
+            list-style-type: none;
+            float: left;/*浮动 左浮动*/
+            width: 100px;
+            height: 400px;
+            background-image: url(images/1.jpg);
+        }
+        .content ul li:nth-of-type(1){         
+            background-image: url(images/1.jpg);
+        }
+        .content ul li:nth-of-type(2){         
+            background-image: url(images/2.jpg);
+        }
+        .content ul li:nth-of-type(3){         
+            background-image: url(images/3.jpg);
+        }
+        .content ul li:nth-of-type(4){         
+            background-image: url(images/4.jpg);
+        }
+        .content ul li .title{
+            width: 100px;
+            height: 420px;       
+            background-color: rgba(0, 0, 0, .5)
+        }
+        .title p{
+            padding: 42px;/*padding 外边距 三大用法之一,用来挤压*/
+            color:#fff;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body> 
+ <div class='ink-layer'></div>   
+ <div class='ink-layer'></div> 
+ <div class='ink-layer'></div> 
+ <div class='ink-layer'></div> 
+ <div class="content">
+ <ul>
+     <li>
+         <div class="title">
+            <p>我的个人拉萨之旅 | | 故事之城</p>
+         </div>
+     </li>
+     <li>
+        <div class="title">
+            <p>我的个人拉萨之旅 | | 故事之城</p>
+         </div>
+     </li>
+     <li>
+        <div class="title">
+            <p>我的个人拉萨之旅 | | 故事之城</p>
+         </div>
+     </li>
+     <li>
+        <div class="title">
+            <p>我的个人拉萨之旅 | | 故事之城</p>
+         </div>
+     </li>     
+ </ul>
+</div>
+</body>
+
+</html>
+
+<!-- 
+/*
+background-color: #336688;/*背景颜色*/
+/*背景-图片:路径*/
+background-image:url(images/1.jpg);
+/* 背景-图片:禁止平铺*/
+background-repeat: no-repeat;
+/* 背景-定位:X方向 Y方向*/
+background-position:center;
+/*背景-尺寸: 宽度 高度 cover自适应*/
+background-size: cover;
+/*一行写法*/
+*/
+
+
+-->
