@@ -1,0 +1,22 @@
+/* #代表id选择器*/
+#red{
+    color: red;
+}
+/*   .XXXX代表类选择器,会选中所有class='XXXX'的*/
+/*例如下面这个.center*/
+.center{
+    text-align: center;
+}
+p{
+    background-color: grey;
+    padding: 20px;
+}
+/*  背景进阶用法
+*/
+body{
+    background-size: 100%;
+    background-image:url("../Images/background.jpg");
+    background-repeat: no-repeat;
+    /*绝对定位*/
+    /*background-position: initial  ;*/
+}

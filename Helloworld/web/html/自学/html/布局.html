@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML布局学习</title>
+    <style>
+        #header{
+            background-color:gray;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        #nav{
+            /*重点!*/
+            /*行高30px*/
+            line-height: 30px;
+            background-color: #336688;
+            /*高300px*/
+            height: 300px;
+            /*宽100px*/
+            width: 140px;
+            /*元素向左浮动!*/
+            float: left;
+        }
+        #nav li{
+            /*去掉li前面的点点*/
+            list-style-type: none;
+            /*左边距设置为0*/
+            color: aliceblue;
+        }
+        #section{
+            width:500px;
+            /*继续左浮动,贴着nav*/
+            float: left;
+            /*内边距*/
+            padding: 10px;
+            /*外边距*/
+            /*margin: 0px;*/
+        }
+        #footer{
+            background-color: gray;
+            color: aliceblue;
+            /*在两侧都不允许浮动元素,用来消除float的影响*/
+            clear: both;
+            /*居中*/
+            text-align: center;
+            /*padding: 5px;*/
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+
+    <h1><img src="../Image/eg_cute.gif" alt="headgif" align="left" width="50" height="50">这是一个测试标题</h1>
+</div>
+<div id="nav">
+    <ul>
+        <li>导航栏1</li>
+        <li>导航栏2</li>
+        <li>导航栏3</li>
+    </ul>
+</div>
+<div id="section">
+    <h3>一般这里放主要内容</h3>
+   <table border="2" align="center">
+       <caption>HTML5里面语义元素</caption>
+       <tr>
+           <td>header</td>
+           <td>	定义文档或节的页眉</td>
+       </tr>
+       <tr>
+           <td>nav</td>
+           <td>定义导航链接的容器</td>
+       </tr>
+       <tr>
+           <td>section</td>
+           <td>定义文档中的节</td>
+       </tr>
+       <tr>
+           <td>section</td>
+           <td>定义文档中的节</td>
+       </tr>
+       <tr>
+           <td>article</td>
+           <td>定义独立的自包含文章</td>
+       </tr>
+       <tr>
+           <td>aside</td>
+           <td>定义内容之外的内容（比如侧栏）</td>
+       </tr>
+       <tr>
+           <td>footer</td>
+           <td>定义文档或节的页脚</td>
+       </tr>
+       <tr>
+           <td>details</td>
+           <td>定义额外的细节</td>
+       </tr>
+       <tr>
+           <td>summary</td>
+           <td>定义 details 元素的标题</td>
+       </tr>
+
+   </table>
+</div>
+<div id="footer">
+   <p>Copyright W3School.com.cn</p>
+</div>
+
+</body>
+</html>
